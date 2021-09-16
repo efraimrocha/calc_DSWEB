@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login  FACEPE</title>
+</head>
+<body>
+    <main>
+        <input type="text" id="resultado">
+        <hr>
+        <div id="lesq">
+            <div class="teclas">
+                <button id="7" onclick="nro_7()">7</button>
+                <button id="8" onclick="nro_8()">8</button>
+                <button id="9" onclick="nro_9()">9</button>
+            </div>
+            <div class="teclas">
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+            </div>
+            <div class="teclas">
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+            </div>
+            <div class="teclas">
+                <button id="0">0</button>
+            </div> 
+        </div>
+        <div id="ldir">
+            <button id="mais" onclick="mais()">+</button>
+            <button id="menos">-</button>
+            <button id="mult">*</button>
+            <button id="divi">/</button>
+            <button id="igual" onclick="res()">=</button>
+        </div>
+    </main>
+</body>
+</html>
+
+
+<script>
+
+    let result = 0;    
+    let aux = "tc";
+    let prev = 0;
+
+    function mais(){   
+        aux = "op";
+        op = "mais";        
+    }
+
+    function res(){   
+        aux = "tc";
+        result = previa;
+        previa = 0;
+        document.getElementById("resultado").value = "Resultado Final "+result;              
+    }
+
+    function nro_7(){
+        if(aux=="op"){
+            if(op=="mais"){
+                previa = previa + 7;
+                document.getElementById("resultado").value = "Final "+result + " | Prévia" +previa ;                
+            }            
+        } 
+        else{
+            previa = 7;
+            document.getElementById("resultado").value = previa;
+        }       
+    }
+    function nro_8(){
+        prov =  8; 
+        document.getElementById("resultado").value = prov;
+        alert(prov);
+        
+    }
+    function nro_9(){
+        document.getElementById("resultado").value = "9";
+    }
+
+    let aula ='JS';
+    if(aula == 'JS'){
+     //   alert("Ola turma, veremos "+nome);
+    }
+</script>
