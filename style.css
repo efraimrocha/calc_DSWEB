@@ -1,0 +1,51 @@
+body{
+    background-color:#EEE;
+    }
+main{
+    border: 5px solid #AAA;
+    width: 33vw;
+    height: 40vh;
+    border-radius: 15px;    
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    text-align: center;
+}
+img{
+    margin-top: 20px;
+    width: 10vw;
+    height: auto;    
+}
+hr{
+    background-color: red;
+}
+button{    
+    color:#AAA;
+    border-radius: 10px;
+    border:2px #AAA solid;
+}
+button:hover{
+    color:blue;
+    border:2px blue solid;
+}
+span{    
+    color:gray;
+}
+#lesq{
+    padding-left: 15px;    
+    float: left;
+}
+#ldir{
+    padding-right: 15px;
+    float: right;
+    width: 80px;    
+}
+#resultado{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+button{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
